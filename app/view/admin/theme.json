@@ -1,0 +1,7 @@
+[
+	"<link rel=\"stylesheet\" href=\"{{cdn_url}}skin/admin/css/plugins.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{cdn_url}}skin/admin/css/jquery.gritter.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{cdn_url}}skin/admin/css/nucleo-svg.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{cdn_url}}skin/admin/css/nucleo-icons.css\" \/>",
+	"<link rel=\"stylesheet\" href=\"{{cdn_url}}skin/admin/css/argon-dashboard.css?v=2.0.0\" \/>"
+]

@@ -1,0 +1,54 @@
+{
+  "script":
+  [
+    {
+      "src": "{{cdn_url}}skin/front/js/nprogress.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/moment.min.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/moment-with-locales.min.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/jquery-3.3.1.min.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/datatables.min.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/datatables.rspnsv.bs.min.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/jquery.slicknav.min.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/bootstrap-datepicker.min.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/bootstrap.bundle.min.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/jquery.gritter.min.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/slick.min.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/fontawesome.min.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/choices.min.js"
+    },
+    {
+      "src": "{{cdn_url}}skin/front/js/app.js?v=0.0.4"
+    },
+    {
+      "src":"{{cdn_url}}assets/js/jquery.priceFormat.min.js"
+    },
+    {
+      "src":"{{cdn_url}}skin/front/js/signature-pad.min.js"
+    }
+    
+  ]
+}

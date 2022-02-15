@@ -1,0 +1,203 @@
+<?php
+/**
+ * Configuration file for Staging version
+ *   You can create one for:
+ *   development.php
+ *   staging.php
+ *   production.php
+ */
+
+/****************************/
+/* == Base Configuration == */
+/* @var string */
+/****************************/
+
+/**
+ * Base URL with http:// or https:// prefix and trailing slash
+ * @var string
+ */
+$site = "https://karir.sbpgroup.id/";
+/**
+ * URL parse method
+ *   - REQUEST_URI, suitable for Nginx
+ *   - PATH_INFO, suitable for XAMPP
+ *   - ORIG_PATH_INFO
+ * @var string
+ */
+$method = "REQUEST_URI";//REQUEST_URI,PATH_INFO,ORIG_PATH_INFO,
+/**
+ * Admin Secret re-routing
+ * this is alias for app/controller/admin/*
+ * @var string
+ */
+$admin_secret_url = 'adminmaster';
+/**
+ * Base URL with http:// or https:// prefix and trailing slash
+ * @var string
+ */
+$cdn_url = "https://karirsbp-prod.b-cdn.net/";
+
+/********************************/
+/* == Database Configuration == */
+/* Database connection information */
+/* @var array of string */
+/********************************/
+$db['host']  = 'localhost';
+$db['user']  = 'sbpgroup_karirdb';
+$db['pass']  = 'kmzwa88Awaa';
+$db['name']  = 'sbpgroup_karirdb';
+$db['port'] = '3306';
+$db['charset'] = 'utf8';
+$db['engine'] = 'mysqli';
+
+/****************************/
+/* == Session Configuration == */
+/* @var string */
+/****************************/
+$saltkey = 'sbpKr22!';
+
+/********************************/
+/* == Timezone Configuration == */
+/* @function string */
+/****************************/
+date_default_timezone_set('Asia/Jakarta');
+
+/********************************/
+/* == Core Configuration == */
+/* register your core class, and put it on: */
+/*   - app/core/ */
+/* all var $core_* value in lower case string*/
+/* @var string */
+/****************************/
+$core_prefix = 'ji_';
+$core_controller = 'controller';
+$core_model = 'model';
+
+/********************************/
+/* == Controller Configuration == */
+/* register your onboarding (main) controller */
+/*   - make sure dont add any traing slash in array key of routes */
+/*   - all var $controller_* value in lower case string */
+/*   - example $routes['produk/(:any)'] = 'produk/detail/index/$1' */
+/*   - example example $routes['blog/id/(:num)/(:any)'] = 'blog/detail/index/$1/$2'' */
+/* @var string */
+/****************************/
+$controller_main='home';
+$controller_404='notfound';
+
+/********************************/
+/* == Controller Re-Routing Configuration == */
+/* make sure dont add any traing slash in array key of routes */
+/* @var array of string */
+/****************************/
+$routes['lowongan/detail/(:num)'] = 'lowongan/detail/index/$1';
+// $routes['produk/(:any)'] = 'produk/detail/index/$1';
+// $routes['blog/id/(:num)/(:any)'] = 'blog/detail/index/$1/$2';
+
+
+/********************************/
+/* == Another Configuration == */
+/* configuration are in array of string format */
+/*  - as name value pair */
+/*  - accessing value by $this->semevar->key in controller extended class */
+/*  - accessing value by $this->semevar->key in model extended class */
+/****************************/
+
+//firebase messaging
+$semevar['fcm'] = new stdClass();
+$semevar['fcm']->version = '';
+$semevar['fcm']->apiKey = '';
+$semevar['fcm']->authDomain = '';
+$semevar['fcm']->databaseURL = '';
+$semevar['fcm']->projectId = '';
+$semevar['fcm']->storageBucket = '';
+$semevar['fcm']->messagingSenderId = '';
+$semevar['fcm']->appId = '';
+
+// example
+$semevar['site_name'] = 'Karir PT SBP Group';
+$semevar['site_name_long'] = 'BERKARIR DI PT SUMBER BINTANG PERKASA GROUP';
+$semevar['site_description'] = 'Dapatkan informasi tentang lowongan dari PT SBP GRUP serta proses perekrutan melalui situs web ini.';
+$semevar['site_version'] = '1.01.16-alpha';
+$semevar['site_suffix'] = ' at PT SBP Group';
+$semevar['site_logo_big'] = 'media/icon/android-chrome-512x512.png';
+$semevar['site_logo_small'] = 'media/icon/small.png';
+$semevar['site_logo'] = 'media/logo-sbp.png';
+$semevar['site_logo_light'] = 'media/logo-sbp-light.png';
+$semevar['site_address'] = 'Bandung, Indonesia';
+$semevar['email_from'] = 'sbpgroup@ns3.techcomp.biz.id';
+$semevar['email_reply'] = 'recruitment@sbpgroup.id';
+$semevar['copyright'] = $semevar['site_name'] . ' versi ' . $semevar['site_version'] . ' &copy; PT Sumber Bintang Perkasa 2021';
+
+// admin
+$semevar['admin_site_suffix'] = ' - Administrator';
+$semevar['admin_logo'] = 'media/logo-sbp.png';
+$semevar['admin_logo_w'] = '224';
+$semevar['admin_logo_h'] = '69';
+$semevar['admin_logo_light'] = 'media/logo-sbp-light.png';
+$semevar['admin_logo_light_w'] = '224';
+$semevar['admin_logo_light_h'] = '69';
+
+//
+$semevar['app_name'] = 'PT Sumber Bintang Perkasa';
+$semevar['app_logo'] = 'media/logo-sbp.png';
+$semevar['app_version'] = '1.01.16-alpha';
+
+$semevar['company_name'] = 'PT SUMBER BINTANG PERKASA GROUP';
+$semevar['company_name_short'] = 'PT SPB GROUP';
+$semevar['company_about'] = 'Kami adalah Perusahaan yang bergerak dalam bidang Accesories, Textile, Imitation Jewellery dengan brand Xuping Jewellery, Meilyn Jewellery, Sachi, Olio, Declip Ornament, Roche Ornament, dan Norami. PT Bintang Hartono Jaya adalah Main Dealer Accesories dan Imitation Jewellery terbesar di Indonesia. Kami percaya suasana yang FUN & sedikit “GILA” akan membuat kami bekerja lebih optimal. Namun kami serius tentang KESUKSESAN. Kami ingin memberikan dampak positif bagi lingkungan di sekitar kami, dengan hidup “WOW” & memberikan “WOW” bagi orang lain. Jika Anda tidak hanya ingin sekedar bekerja, namun juga belajar bersama di kehidupan ini, kami membuka kesempatan bagi Anda untuk bergabung bersama SUPER TEAM di PT Bintang Hartono Jaya. We\'ll always open for new family member. We\'re learning, studying, sharing, and have fun together. Let\'s become a Profunsional. You should join us!';
+$semevar['company_address'] = 'Jakarta, Indonesia';
+$semevar['media_user'] = 'media/user';
+
+$semevar['media_upload'] = 'media/upload';
+$semevar['media_capture'] = 'media/capture';
+
+//variable minimal pendidikan
+$semevar['pendidikans'] = array();
+$semevar['pendidikans']['SD'] = 1;
+$semevar['pendidikans']['SMP'] = 2;
+$semevar['pendidikans']['SMA'] = 3;
+$semevar['pendidikans']['SMK'] = 3;
+$semevar['pendidikans']['D3'] = 4;
+$semevar['pendidikans']['D4'] = 6;
+$semevar['pendidikans']['S1'] = 6;
+$semevar['pendidikans']['S2'] = 7;
+$semevar['pendidikans']['S3'] = 8;
+$semevar['expire_date_after_apply'] = 180;
+$semevar['email_strict'] = 0;
+
+$semevar['login_form_instruction'] = 'Silakan masukan email dan password yang diisi ketika mendaftar.';
+$semevar['register_form_instruction'] = 'Silakan lengkapi form ini dengan sebaik-baiknya karena datanya akan digunakan penyeleksian oleh sistem.';
+
+$semevar['progress_rekrutmen'] = array('apply'=>'Apply','profile'=>'Update Profile','upload'=>'Upload Persyaratan','tes'=>'Tes','interview'=>'Interview','kontrak'=>'Negosiasi Kontrak','selesai'=>'Selesai');
+$semevar['syarat_files'] = array('ktp', 'cv', 'portofolio', 'ijazah', 'transkrip', 'vaksin');
+$semevar['is_tes_silhouette'] = 0;
+$semevar['is_tes_camera_preview'] = 1;
+$semevar['pelamar_reject_notification_email'] = 0;
+$semevar['admin_can_delete_tes_session'] = 0;
+$semevar['tes_auto_done'] = 1;
+$semevar['change_token_after_interview'] = 0;
+$semevar['verifikasi_data_enabled'] = 0;
+$semevar['stepkey_view_enabled'] = 1;
+
+$semevar['tes_cs_auto_save'] = 1;
+$semevar['tes_iq_auto_save'] = 1;
+$semevar['tes_kepribadian_auto_save'] = 0;
+
+$semevar['timeout_after_daftar_hari'] = 7;
+$semevar['timeout_after_apply_hari'] = 3;
+$semevar['timeout_after_reject_hari'] = 7;
+
+if(!defined('INTERVIEW_DIHAPUS')) define('INTERVIEW_DIHAPUS', 'Dihapus');
+if(!defined('INTERVIEW_SELESAI')) define('INTERVIEW_SELESAI', 'Selesai');
+if(!defined('INTERVIEW_BERMINAT')) define('INTERVIEW_BERMINAT', 'Pelamar Beminat');
+if(!defined('INTERVIEW_DIJADWALKAN')) define('INTERVIEW_DIJADWALKAN', 'Dijadwalkan');
+if(!defined('INTERVIEW_DIRESCHEDULE')) define('INTERVIEW_DIRESCHEDULE', 'Dijadwalkan');
+if(!defined('INTERVIEW_DIBATALKAN')) define('INTERVIEW_DIBATALKAN', 'Dibatalkan');
+if(!defined('INTERVIEW_GANTI_JADWAL')) define('INTERVIEW_GANTI_JADWAL', 'Jadwal telah diganti');
+if(!defined('INTERVIEW_WAIT_USER2')) define('INTERVIEW_WAIT_USER2', 'Menunggu konfirmasi User 2');
+if(!defined('INTERVIEW_RESCHEDULE_USER1')) define('INTERVIEW_RESCHEDULE_USER1', 'User 1 membatalkan / reschedule');
+if(!defined('INTERVIEW_DIRESCHEDULE_PELAMAR')) define('INTERVIEW_DIRESCHEDULE_PELAMAR', 'Pelamar minta reschedule');
+if(!defined('INTERVIEW_TIDAK_BERMINAT')) define('INTERVIEW_TIDAK_BERMINAT', 'Interview selesai: Pelamar tidak berminat');
+if(!defined('INTERVIEW_DIBATALKAN_DIRESCHEDULE')) define('INTERVIEW_DIBATALKAN_DIRESCHEDULE', 'Dibatalkan / di reschedule');
+if(!defined('INTERVIEW_DIBATALKAN_DIRESCHEDULE_USER2')) define('INTERVIEW_DIBATALKAN_DIRESCHEDULE_USER2', 'User 2 membatalkan / reschedule');

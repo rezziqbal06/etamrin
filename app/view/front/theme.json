@@ -1,0 +1,45 @@
+{
+  "link":
+  [
+    {
+      "rel": "stylesheet",
+      "href": "{{cdn_url}}skin/front/css/nprogress.css"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "{{cdn_url}}skin/front/css/font-awesome.min.css"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "{{cdn_url}}skin/front/css/jquery.gritter.css"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "{{cdn_url}}skin/front/css/bootstrap-datepicker3.min.css"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "{{cdn_url}}skin/front/css/bootstrap.min.css"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "{{cdn_url}}skin/front/css/slick.css"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "{{cdn_url}}skin/front/css/slick-theme.css"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "{{cdn_url}}skin/front/css/choices.min.css"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "{{cdn_url}}skin/front/css/app.css?v=1.0.22"
+    }
+  ]
+}

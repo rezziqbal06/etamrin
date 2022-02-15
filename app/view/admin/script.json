@@ -1,0 +1,12 @@
+[
+  "<script src=\"{{cdn_url}}skin/admin/js/core/popper.min.js\"><\/script>",
+  "<script src=\"{{cdn_url}}skin/admin/js/core/bootstrap.min.js\"><\/script>",
+  "<script src=\"{{cdn_url}}skin/admin/js/plugins/perfect-scrollbar.min.js\"><\/script>",
+  "<script src=\"{{cdn_url}}skin/admin/js/plugins/smooth-scrollbar.min.js\"><\/script>",
+  "<script src=\"{{cdn_url}}skin/admin/js/plugins/chartjs.min.js\"><\/script>",
+  "<script src=\"{{cdn_url}}skin/admin/js/vendor/jquery.min.js\"><\/script>",
+  "<script src=\"{{cdn_url}}skin/admin/js/jquery.gritter.min.js\"><\/script>",
+  "<script src=\"{{cdn_url}}skin/admin/js/argon-dashboard.min.js\"><\/script>",
+  "<script src=\"{{cdn_url}}skin/admin/js/plugins.js\"><\/script>",
+  "<script src=\"{{cdn_url}}skin/admin/js/app.js\"><\/script>"
+]
